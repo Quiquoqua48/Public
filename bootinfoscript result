@@ -1,0 +1,1694 @@
+                Boot Info Script 0.78      [09 October 2019]
+
+
+============================= Boot Info Summary: ===============================
+
+ => Syslinux GPTMBR (4.04-5.01) is installed in the MBR of /dev/sda.
+
+sda1: __________________________________________________________________________
+
+    File system:       vfat
+    Boot sector type:  FAT32
+    Boot sector info:  No errors found in the Boot Parameter Block.
+    Operating System:  
+    Boot files:        /efi/BOOT/fbx64.efi /efi/BOOT/grub.efi 
+                       /efi/BOOT/mmx64.efi /efi/BOOT/MokManager.efi 
+                       /efi/opensuse/fwupdx64.efi /efi/opensuse/grub.efi 
+                       /efi/opensuse/grubx64.efi /efi/opensuse/MokManager.efi 
+                       /efi/opensuse/shim.efi /efi/ubuntu/grubx64.efi 
+                       /efi/ubuntu/mmx64.efi /efi/ubuntu/shimx64.efi 
+                       /efi/BOOT/grub.cfg /efi/opensuse/grub.cfg 
+                       /efi/ubuntu/grub.cfg /efi/Microsoft/Boot/bootmgfw.efi 
+                       /efi/Microsoft/Boot/bootmgr.efi 
+                       /efi/Microsoft/Boot/memtest.efi
+
+sda2: __________________________________________________________________________
+
+    File system:       ext4
+    Boot sector type:  -
+    Boot sector info: 
+    Operating System:  Ubuntu 19.10
+    Boot files:        /boot/grub/grub.cfg /etc/fstab
+
+sda3: __________________________________________________________________________
+
+    File system:       btrfs
+    Boot sector type:  -
+    Boot sector info: 
+    Operating System:  openSUSE Leap 15.1
+    Boot files:        /boot/grub2/grub.cfg /etc/fstab
+
+sda4: __________________________________________________________________________
+
+    File system:       ntfs
+    Boot sector type:  Windows 8/2012: NTFS
+    Boot sector info:  No errors found in the Boot Parameter Block.
+    Operating System:  
+    Boot files:        /Windows/System32/winload.exe
+
+sda5: __________________________________________________________________________
+
+    File system:       
+    Boot sector type:  -
+    Boot sector info: 
+
+sda6: __________________________________________________________________________
+
+    File system:       swap
+    Boot sector type:  -
+    Boot sector info: 
+
+sda7: __________________________________________________________________________
+
+    File system:       btrfs
+    Boot sector type:  Grub2 (v1.99-2.00)
+    Boot sector info:  Grub2 (v2.00) is installed in the boot sector of sda7 
+                       and looks at sector 1239945217 of the same hard drive 
+                       for core.img. core.img is at this location and looks 
+                       for (,gpt7)/boot/grub2. It also embeds following 
+                       components:
+                       
+                       modules
+                       -------------------------------------------------------
+                       crypto gcry_crc gzio diskfilter raid6rec extcmd lzopio 
+                       btrfs part_gpt biosdisk
+                       -------------------------------------------------------
+                       
+                       config script
+                       -------------------------------------------------------
+                       set btrfs_relative_path='y'
+                       btrfs-mount-subvol ($root) /boot/grub2/i386-pc 
+                       @/boot/grub2/i386-pc
+                       
+                       -------------------------------------------------------
+    Operating System:  openSUSE Tumbleweed
+    Boot files:        /boot/grub2/grub.cfg /etc/fstab
+
+sda8: __________________________________________________________________________
+
+    File system:       ext4
+    Boot sector type:  -
+    Boot sector info: 
+    Operating System:  
+    Boot files:        
+
+============================ Drive/Partition Info: =============================
+
+Drive: sda _____________________________________________________________________
+Disk /dev/sda: 931,5 GiB, 1000204886016 bytes, 1953525168 sectors
+Disk model: ST31000524AS    
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+Partition  Boot  Start Sector    End Sector  # of Sectors  Id System
+
+/dev/sda1    *              1 1,953,525,167 1,953,525,167  ee GPT
+
+
+GUID Partition Table detected.
+
+Partition  Attrs   Start Sector    End Sector  # of Sectors System
+/dev/sda1                 2,048     1,050,623     1,048,576 EFI System partition
+/dev/sda2             1,050,624   401,051,647   400,001,024 Data partition (Linux)
+/dev/sda3           401,051,648   820,482,047   419,430,400 Data partition (Linux)
+/dev/sda4           820,482,048 1,239,912,447   419,430,400 Data partition (Windows/Linux)
+/dev/sda5         1,239,912,448 1,239,945,215        32,768 Microsoft Reserved Partition (Windows)
+/dev/sda6         1,949,329,408 1,953,525,134     4,195,727 Swap partition (Linux)
+/dev/sda7    B    1,239,945,216 1,491,603,455   251,658,240 Data partition (Linux)
+/dev/sda8         1,659,375,616 1,949,329,407   289,953,792 Data partition (Linux)
+
+Attributes: R=Required, N=No Block IO, B=Legacy BIOS Bootable, +=More bits set
+
+"blkid" output: ________________________________________________________________
+
+Device           UUID                                   TYPE       LABEL
+
+/dev/loop0                                              squashfs   
+/dev/loop1                                              squashfs   
+/dev/loop2                                              squashfs   
+/dev/loop3                                              squashfs   
+/dev/loop4                                              squashfs   
+/dev/loop5                                              squashfs   
+/dev/loop6                                              squashfs   
+/dev/loop7                                              squashfs   
+/dev/loop8                                              squashfs   
+/dev/sda1        245E-C65E                              vfat       
+/dev/sda2        0643c84d-8a1d-41ca-a6c4-25167d48b554   ext4       
+/dev/sda3        15eaebf1-67c9-4a5e-9ddf-219c999c28ab   btrfs      
+/dev/sda4        D40A343E0A342042                       ntfs       
+/dev/sda5                                                          
+/dev/sda6        2cee98e4-66c7-4684-ae70-56b9c26ce122   swap       
+/dev/sda7        c0e87b3b-43aa-403d-b532-64fcdee4442c   btrfs      
+/dev/sda8        c16a67d8-d160-41c0-b711-fe13aa101ce2   ext4       
+
+========================= "ls -l /dev/disk/by-id" output: ======================
+
+totale 0
+lrwxrwxrwx 1 root root  9  7 mar 10.58 ata-ATAPI_DVD_A_DH24ABS_237146500941 -> ../../sr0
+lrwxrwxrwx 1 root root  9  7 mar 10.58 ata-ST31000524AS_6VPH6R0E -> ../../sda
+lrwxrwxrwx 1 root root 10  7 mar 10.58 ata-ST31000524AS_6VPH6R0E-part1 -> ../../sda1
+lrwxrwxrwx 1 root root 10  7 mar 10.58 ata-ST31000524AS_6VPH6R0E-part2 -> ../../sda2
+lrwxrwxrwx 1 root root 10  7 mar 10.58 ata-ST31000524AS_6VPH6R0E-part3 -> ../../sda3
+lrwxrwxrwx 1 root root 10  7 mar 10.58 ata-ST31000524AS_6VPH6R0E-part4 -> ../../sda4
+lrwxrwxrwx 1 root root 10  7 mar 10.58 ata-ST31000524AS_6VPH6R0E-part5 -> ../../sda5
+lrwxrwxrwx 1 root root 10  7 mar 10.58 ata-ST31000524AS_6VPH6R0E-part6 -> ../../sda6
+lrwxrwxrwx 1 root root 10  7 mar 10.58 ata-ST31000524AS_6VPH6R0E-part7 -> ../../sda7
+lrwxrwxrwx 1 root root 10  7 mar 10.58 ata-ST31000524AS_6VPH6R0E-part8 -> ../../sda8
+lrwxrwxrwx 1 root root  9  7 mar 10.58 scsi-0ATA_ST31000524AS_6VPH6R0E -> ../../sda
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-0ATA_ST31000524AS_6VPH6R0E-part1 -> ../../sda1
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-0ATA_ST31000524AS_6VPH6R0E-part2 -> ../../sda2
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-0ATA_ST31000524AS_6VPH6R0E-part3 -> ../../sda3
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-0ATA_ST31000524AS_6VPH6R0E-part4 -> ../../sda4
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-0ATA_ST31000524AS_6VPH6R0E-part5 -> ../../sda5
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-0ATA_ST31000524AS_6VPH6R0E-part6 -> ../../sda6
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-0ATA_ST31000524AS_6VPH6R0E-part7 -> ../../sda7
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-0ATA_ST31000524AS_6VPH6R0E-part8 -> ../../sda8
+lrwxrwxrwx 1 root root  9  7 mar 10.58 scsi-1ATA_ST31000524AS_6VPH6R0E -> ../../sda
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-1ATA_ST31000524AS_6VPH6R0E-part1 -> ../../sda1
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-1ATA_ST31000524AS_6VPH6R0E-part2 -> ../../sda2
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-1ATA_ST31000524AS_6VPH6R0E-part3 -> ../../sda3
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-1ATA_ST31000524AS_6VPH6R0E-part4 -> ../../sda4
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-1ATA_ST31000524AS_6VPH6R0E-part5 -> ../../sda5
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-1ATA_ST31000524AS_6VPH6R0E-part6 -> ../../sda6
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-1ATA_ST31000524AS_6VPH6R0E-part7 -> ../../sda7
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-1ATA_ST31000524AS_6VPH6R0E-part8 -> ../../sda8
+lrwxrwxrwx 1 root root  9  7 mar 10.58 scsi-35000c50045eec720 -> ../../sda
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-35000c50045eec720-part1 -> ../../sda1
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-35000c50045eec720-part2 -> ../../sda2
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-35000c50045eec720-part3 -> ../../sda3
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-35000c50045eec720-part4 -> ../../sda4
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-35000c50045eec720-part5 -> ../../sda5
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-35000c50045eec720-part6 -> ../../sda6
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-35000c50045eec720-part7 -> ../../sda7
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-35000c50045eec720-part8 -> ../../sda8
+lrwxrwxrwx 1 root root  9  7 mar 10.58 scsi-SATA_ST31000524AS_6VPH6R0E -> ../../sda
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-SATA_ST31000524AS_6VPH6R0E-part1 -> ../../sda1
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-SATA_ST31000524AS_6VPH6R0E-part2 -> ../../sda2
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-SATA_ST31000524AS_6VPH6R0E-part3 -> ../../sda3
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-SATA_ST31000524AS_6VPH6R0E-part4 -> ../../sda4
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-SATA_ST31000524AS_6VPH6R0E-part5 -> ../../sda5
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-SATA_ST31000524AS_6VPH6R0E-part6 -> ../../sda6
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-SATA_ST31000524AS_6VPH6R0E-part7 -> ../../sda7
+lrwxrwxrwx 1 root root 10  7 mar 10.58 scsi-SATA_ST31000524AS_6VPH6R0E-part8 -> ../../sda8
+lrwxrwxrwx 1 root root  9  7 mar 10.58 wwn-0x5000c50045eec720 -> ../../sda
+lrwxrwxrwx 1 root root 10  7 mar 10.58 wwn-0x5000c50045eec720-part1 -> ../../sda1
+lrwxrwxrwx 1 root root 10  7 mar 10.58 wwn-0x5000c50045eec720-part2 -> ../../sda2
+lrwxrwxrwx 1 root root 10  7 mar 10.58 wwn-0x5000c50045eec720-part3 -> ../../sda3
+lrwxrwxrwx 1 root root 10  7 mar 10.58 wwn-0x5000c50045eec720-part4 -> ../../sda4
+lrwxrwxrwx 1 root root 10  7 mar 10.58 wwn-0x5000c50045eec720-part5 -> ../../sda5
+lrwxrwxrwx 1 root root 10  7 mar 10.58 wwn-0x5000c50045eec720-part6 -> ../../sda6
+lrwxrwxrwx 1 root root 10  7 mar 10.58 wwn-0x5000c50045eec720-part7 -> ../../sda7
+lrwxrwxrwx 1 root root 10  7 mar 10.58 wwn-0x5000c50045eec720-part8 -> ../../sda8
+
+================================ Mount points: =================================
+
+Device           Mount_Point              Type       Options
+
+/dev/fuse        /run/user/1000/doc       fuse       (rw,nosuid,nodev,relatime,user_id=1000,group_id=100)
+/dev/sda1        /boot/efi                vfat       (rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
+/dev/sda3        /boot/grub2/i386-pc      btrfs      (rw,relatime,space_cache,subvolid=266,subvol=/@/boot/grub2/i386-pc)
+/dev/sda3        /boot/grub2/x86_64-efi   btrfs      (rw,relatime,space_cache,subvolid=265,subvol=/@/boot/grub2/x86_64-efi)
+/dev/sda3        /home                    btrfs      (rw,relatime,space_cache,subvolid=264,subvol=/@/home)
+/dev/sda3        /opt                     btrfs      (rw,relatime,space_cache,subvolid=263,subvol=/@/opt)
+/dev/sda3        /root                    btrfs      (rw,relatime,space_cache,subvolid=262,subvol=/@/root)
+/dev/sda3        /.snapshots              btrfs      (rw,relatime,space_cache,subvolid=267,subvol=/@/.snapshots)
+/dev/sda3        /srv                     btrfs      (rw,relatime,space_cache,subvolid=261,subvol=/@/srv)
+/dev/sda3        /tmp                     btrfs      (rw,relatime,space_cache,subvolid=260,subvol=/@/tmp)
+/dev/sda3        /                        btrfs      (rw,relatime,space_cache,subvolid=819,subvol=/@/.snapshots/393/snapshot)
+/dev/sda3        /usr/local               btrfs      (rw,relatime,space_cache,subvolid=259,subvol=/@/usr/local)
+/dev/sda3        /var                     btrfs      (rw,relatime,space_cache,subvolid=258,subvol=/@/var)
+
+
+=========================== sda1/efi/BOOT/grub.cfg: ============================
+
+--------------------------------------------------------------------------------
+set btrfs_relative_path="yes"
+search --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+set prefix=(${root})/boot/grub2
+source "${prefix}/grub.cfg"
+--------------------------------------------------------------------------------
+
+========================= sda1/efi/opensuse/grub.cfg: ==========================
+
+--------------------------------------------------------------------------------
+set btrfs_relative_path="yes"
+search --fs-uuid --set=root c0e87b3b-43aa-403d-b532-64fcdee4442c
+set prefix=(${root})/boot/grub2
+source "${prefix}/grub.cfg"
+--------------------------------------------------------------------------------
+
+========================== sda1/efi/ubuntu/grub.cfg: ===========================
+
+--------------------------------------------------------------------------------
+search.fs_uuid 0643c84d-8a1d-41ca-a6c4-25167d48b554 root hd0,gpt2 
+set prefix=($root)'/boot/grub'
+configfile $prefix/grub.cfg
+--------------------------------------------------------------------------------
+
+=========================== sda2/boot/grub/grub.cfg: ===========================
+
+--------------------------------------------------------------------------------
+#
+# DO NOT EDIT THIS FILE
+#
+# It is automatically generated by grub-mkconfig using templates
+# from /etc/grub.d and settings from /etc/default/grub
+#
+
+### BEGIN /etc/grub.d/00_header ###
+if [ -s $prefix/grubenv ]; then
+  set have_grubenv=true
+  load_env
+fi
+if [ "${initrdfail}" = 2 ]; then
+   set initrdfail=
+elif [ "${initrdfail}" = 1 ]; then
+   set next_entry="${prev_entry}"
+   set prev_entry=
+   save_env prev_entry
+   if [ "${next_entry}" ]; then
+      set initrdfail=2
+   fi
+fi
+if [ "${next_entry}" ] ; then
+   set default="${next_entry}"
+   set next_entry=
+   save_env next_entry
+   set boot_once=true
+else
+   set default="0"
+fi
+
+if [ x"${feature_menuentry_id}" = xy ]; then
+  menuentry_id_option="--id"
+else
+  menuentry_id_option=""
+fi
+
+export menuentry_id_option
+
+if [ "${prev_saved_entry}" ]; then
+  set saved_entry="${prev_saved_entry}"
+  save_env saved_entry
+  set prev_saved_entry=
+  save_env prev_saved_entry
+  set boot_once=true
+fi
+
+function savedefault {
+  if [ -z "${boot_once}" ]; then
+    saved_entry="${chosen}"
+    save_env saved_entry
+  fi
+}
+function initrdfail {
+    if [ -n "${have_grubenv}" ]; then if [ -n "${partuuid}" ]; then
+      if [ -z "${initrdfail}" ]; then
+        set initrdfail=1
+        if [ -n "${boot_once}" ]; then
+          set prev_entry="${default}"
+          save_env prev_entry
+        fi
+      fi
+      save_env initrdfail
+    fi; fi
+}
+function recordfail {
+  set recordfail=1
+  if [ -n "${have_grubenv}" ]; then if [ -z "${boot_once}" ]; then save_env recordfail; fi; fi
+}
+function load_video {
+  if [ x$feature_all_video_module = xy ]; then
+    insmod all_video
+  else
+    insmod efi_gop
+    insmod efi_uga
+    insmod ieee1275_fb
+    insmod vbe
+    insmod vga
+    insmod video_bochs
+    insmod video_cirrus
+  fi
+}
+
+if [ x$feature_default_font_path = xy ] ; then
+   font=unicode
+else
+insmod part_gpt
+insmod ext2
+set root='hd0,gpt2'
+if [ x$feature_platform_search_hint = xy ]; then
+  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+else
+  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+fi
+    font="/usr/share/grub/unicode.pf2"
+fi
+
+if loadfont $font ; then
+  set gfxmode=auto
+  load_video
+  insmod gfxterm
+  set locale_dir=$prefix/locale
+  set lang=it_IT
+  insmod gettext
+fi
+terminal_output gfxterm
+if [ "${recordfail}" = 1 ] ; then
+  set timeout=30
+else
+  if [ x$feature_timeout_style = xy ] ; then
+    set timeout_style=hidden
+    set timeout=0
+  # Fallback hidden-timeout code in case the timeout_style feature is
+  # unavailable.
+  elif sleep --interruptible 0 ; then
+    set timeout=0
+  fi
+fi
+### END /etc/grub.d/00_header ###
+
+### BEGIN /etc/grub.d/05_debian_theme ###
+set menu_color_normal=white/black
+set menu_color_highlight=black/light-gray
+# previously #2c001e 44,0,30,0
+# now yaru #4f194c 79,25,76
+if background_color 79,25,76,0; then
+  clear
+fi
+### END /etc/grub.d/05_debian_theme ###
+
+### BEGIN /etc/grub.d/10_linux ###
+function gfxmode {
+	set gfxpayload="${1}"
+	if [ "${1}" = "keep" ]; then
+		set vt_handoff=vt.handoff=7
+	else
+		set vt_handoff=
+	fi
+}
+if [ "${recordfail}" != 1 ]; then
+  if [ -e ${prefix}/gfxblacklist.txt ]; then
+    if hwmatch ${prefix}/gfxblacklist.txt 3; then
+      if [ ${match} = 0 ]; then
+        set linux_gfx_mode=keep
+      else
+        set linux_gfx_mode=text
+      fi
+    else
+      set linux_gfx_mode=text
+    fi
+  else
+    set linux_gfx_mode=keep
+  fi
+else
+  set linux_gfx_mode=text
+fi
+export linux_gfx_mode
+menuentry 'Ubuntu' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-simple-0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+	recordfail
+	load_video
+	gfxmode $linux_gfx_mode
+	insmod gzio
+	if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+	insmod part_gpt
+	insmod ext2
+	set root='hd0,gpt2'
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+	else
+	  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+	fi
+	linux	/boot/vmlinuz-5.3.0-26-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro  quiet splash $vt_handoff
+	initrd	/boot/initrd.img-5.3.0-26-generic
+}
+submenu 'Advanced options for Ubuntu' $menuentry_id_option 'gnulinux-advanced-0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+	menuentry 'Ubuntu, with Linux 5.3.0-26-generic' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-5.3.0-26-generic-advanced-0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		recordfail
+		load_video
+		gfxmode $linux_gfx_mode
+		insmod gzio
+		if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		echo	'Loading Linux 5.3.0-26-generic ...'
+		linux	/boot/vmlinuz-5.3.0-26-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro  quiet splash $vt_handoff
+		echo	'Loading initial ramdisk ...'
+		initrd	/boot/initrd.img-5.3.0-26-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-26-generic (recovery mode)' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-5.3.0-26-generic-recovery-0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		recordfail
+		load_video
+		insmod gzio
+		if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		echo	'Loading Linux 5.3.0-26-generic ...'
+		linux	/boot/vmlinuz-5.3.0-26-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro recovery nomodeset 
+		echo	'Loading initial ramdisk ...'
+		initrd	/boot/initrd.img-5.3.0-26-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-24-generic' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-5.3.0-24-generic-advanced-0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		recordfail
+		load_video
+		gfxmode $linux_gfx_mode
+		insmod gzio
+		if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		echo	'Loading Linux 5.3.0-24-generic ...'
+		linux	/boot/vmlinuz-5.3.0-24-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro  quiet splash $vt_handoff
+		echo	'Loading initial ramdisk ...'
+		initrd	/boot/initrd.img-5.3.0-24-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-24-generic (recovery mode)' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-5.3.0-24-generic-recovery-0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		recordfail
+		load_video
+		insmod gzio
+		if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		echo	'Loading Linux 5.3.0-24-generic ...'
+		linux	/boot/vmlinuz-5.3.0-24-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro recovery nomodeset 
+		echo	'Loading initial ramdisk ...'
+		initrd	/boot/initrd.img-5.3.0-24-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-18-generic' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-5.3.0-18-generic-advanced-0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		recordfail
+		load_video
+		gfxmode $linux_gfx_mode
+		insmod gzio
+		if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		echo	'Loading Linux 5.3.0-18-generic ...'
+		linux	/boot/vmlinuz-5.3.0-18-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro  quiet splash $vt_handoff
+		echo	'Loading initial ramdisk ...'
+		initrd	/boot/initrd.img-5.3.0-18-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-18-generic (recovery mode)' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-5.3.0-18-generic-recovery-0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		recordfail
+		load_video
+		insmod gzio
+		if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		echo	'Loading Linux 5.3.0-18-generic ...'
+		linux	/boot/vmlinuz-5.3.0-18-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro recovery nomodeset 
+		echo	'Loading initial ramdisk ...'
+		initrd	/boot/initrd.img-5.3.0-18-generic
+	}
+}
+
+### END /etc/grub.d/10_linux ###
+
+### BEGIN /etc/grub.d/10_linux_zfs ###
+### END /etc/grub.d/10_linux_zfs ###
+
+### BEGIN /etc/grub.d/20_linux_xen ###
+
+### END /etc/grub.d/20_linux_xen ###
+
+### BEGIN /etc/grub.d/20_memtest86+ ###
+### END /etc/grub.d/20_memtest86+ ###
+
+### BEGIN /etc/grub.d/30_os-prober ###
+menuentry 'Windows Boot Manager (on /dev/sda1)' --class windows --class os $menuentry_id_option 'osprober-efi-245E-C65E' {
+	insmod part_gpt
+	insmod fat
+	set root='hd0,gpt1'
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt1 --hint-efi=hd0,gpt1 --hint-baremetal=ahci0,gpt1  245E-C65E
+	else
+	  search --no-floppy --fs-uuid --set=root 245E-C65E
+	fi
+	chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+}
+menuentry 'openSUSE Leap 15.1 (on /dev/sda3)' --class opensuse --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-simple-15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+	insmod part_gpt
+	insmod btrfs
+	set root='hd0,gpt3'
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+	else
+	  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+	fi
+	linux /boot/vmlinuz-4.12.14-lp151.28.36-default root=/dev/sda3
+	initrd /boot/initrd-4.12.14-lp151.28.36-default
+}
+submenu 'Advanced options for openSUSE Leap 15.1 (on /dev/sda3)' $menuentry_id_option 'osprober-gnulinux-advanced-15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+	menuentry 'openSUSE Leap 15.1 (on /dev/sda3)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-4.12.14-lp151.28.36-default--15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt3'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		else
+		  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		fi
+		linux /boot/vmlinuz-4.12.14-lp151.28.36-default root=/dev/sda3
+		initrd /boot/initrd-4.12.14-lp151.28.36-default
+	}
+	menuentry 'openSUSE Leap 15.1 (on /dev/sda3)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-4.12.14-lp151.27-default--15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt3'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		else
+		  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		fi
+		linux /boot/vmlinuz-4.12.14-lp151.27-default root=/dev/sda3
+		initrd /boot/initrd-4.12.14-lp151.27-default
+	}
+	menuentry 'openSUSE Leap 15.1 (on /dev/sda3)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinux-4.12.14-lp151.28.36-default.gz--15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt3'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		else
+		  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		fi
+		linux /boot/vmlinux-4.12.14-lp151.28.36-default.gz root=/dev/sda3
+	}
+	menuentry 'openSUSE Leap 15.1 (on /dev/sda3)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinux-4.12.14-lp151.27-default.gz--15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt3'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		else
+		  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		fi
+		linux /boot/vmlinux-4.12.14-lp151.27-default.gz root=/dev/sda3
+	}
+}
+
+menuentry 'Debian GNU/Linux 10 (buster) (on /dev/sda8)' --class debian --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-simple-fedd4b70-a812-422e-a1d4-ecf8094311f5' {
+	insmod part_gpt
+	insmod ext2
+	set root='hd0,gpt8'
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt8 --hint-efi=hd0,gpt8 --hint-baremetal=ahci0,gpt8  fedd4b70-a812-422e-a1d4-ecf8094311f5
+	else
+	  search --no-floppy --fs-uuid --set=root fedd4b70-a812-422e-a1d4-ecf8094311f5
+	fi
+	linux /vmlinuz root=/dev/sda8
+	initrd /initrd.img
+}
+submenu 'Advanced options for Debian GNU/Linux 10 (buster) (on /dev/sda8)' $menuentry_id_option 'osprober-gnulinux-advanced-fedd4b70-a812-422e-a1d4-ecf8094311f5' {
+	menuentry 'Debian GNU/Linux 10 (buster) (on /dev/sda8)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/vmlinuz--fedd4b70-a812-422e-a1d4-ecf8094311f5' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt8'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt8 --hint-efi=hd0,gpt8 --hint-baremetal=ahci0,gpt8  fedd4b70-a812-422e-a1d4-ecf8094311f5
+		else
+		  search --no-floppy --fs-uuid --set=root fedd4b70-a812-422e-a1d4-ecf8094311f5
+		fi
+		linux /vmlinuz root=/dev/sda8
+		initrd /initrd.img
+	}
+	menuentry 'Debian GNU/Linux 10 (buster) (on /dev/sda8)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/vmlinuz--fedd4b70-a812-422e-a1d4-ecf8094311f5' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt8'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt8 --hint-efi=hd0,gpt8 --hint-baremetal=ahci0,gpt8  fedd4b70-a812-422e-a1d4-ecf8094311f5
+		else
+		  search --no-floppy --fs-uuid --set=root fedd4b70-a812-422e-a1d4-ecf8094311f5
+		fi
+		linux /vmlinuz root=/dev/sda8
+		initrd /initrd.img
+	}
+	menuentry 'Debian GNU/Linux 10 (buster) (on /dev/sda8)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/vmlinuz--fedd4b70-a812-422e-a1d4-ecf8094311f5' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt8'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt8 --hint-efi=hd0,gpt8 --hint-baremetal=ahci0,gpt8  fedd4b70-a812-422e-a1d4-ecf8094311f5
+		else
+		  search --no-floppy --fs-uuid --set=root fedd4b70-a812-422e-a1d4-ecf8094311f5
+		fi
+		linux /vmlinuz root=/dev/sda8
+		initrd /initrd.img.old
+	}
+	menuentry 'Debian GNU/Linux 10 (buster) (on /dev/sda8)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-4.19.0-6-amd64--fedd4b70-a812-422e-a1d4-ecf8094311f5' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt8'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt8 --hint-efi=hd0,gpt8 --hint-baremetal=ahci0,gpt8  fedd4b70-a812-422e-a1d4-ecf8094311f5
+		else
+		  search --no-floppy --fs-uuid --set=root fedd4b70-a812-422e-a1d4-ecf8094311f5
+		fi
+		linux /boot/vmlinuz-4.19.0-6-amd64 root=/dev/sda8
+		initrd /boot/initrd.img-4.19.0-6-amd64
+	}
+	menuentry 'Debian GNU/Linux 10 (buster) (on /dev/sda8)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/vmlinuz--fedd4b70-a812-422e-a1d4-ecf8094311f5' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt8'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt8 --hint-efi=hd0,gpt8 --hint-baremetal=ahci0,gpt8  fedd4b70-a812-422e-a1d4-ecf8094311f5
+		else
+		  search --no-floppy --fs-uuid --set=root fedd4b70-a812-422e-a1d4-ecf8094311f5
+		fi
+		linux /vmlinuz root=/dev/sda8
+		initrd /initrd.img
+	}
+	menuentry 'Debian GNU/Linux 10 (buster) (on /dev/sda8)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/vmlinuz--fedd4b70-a812-422e-a1d4-ecf8094311f5' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt8'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt8 --hint-efi=hd0,gpt8 --hint-baremetal=ahci0,gpt8  fedd4b70-a812-422e-a1d4-ecf8094311f5
+		else
+		  search --no-floppy --fs-uuid --set=root fedd4b70-a812-422e-a1d4-ecf8094311f5
+		fi
+		linux /vmlinuz root=/dev/sda8
+		initrd /initrd.img
+	}
+	menuentry 'Debian GNU/Linux 10 (buster) (on /dev/sda8)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/vmlinuz--fedd4b70-a812-422e-a1d4-ecf8094311f5' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt8'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt8 --hint-efi=hd0,gpt8 --hint-baremetal=ahci0,gpt8  fedd4b70-a812-422e-a1d4-ecf8094311f5
+		else
+		  search --no-floppy --fs-uuid --set=root fedd4b70-a812-422e-a1d4-ecf8094311f5
+		fi
+		linux /vmlinuz root=/dev/sda8
+		initrd /initrd.img.old
+	}
+	menuentry 'Debian GNU/Linux 10 (buster) (on /dev/sda8)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/vmlinuz.old--fedd4b70-a812-422e-a1d4-ecf8094311f5' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt8'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt8 --hint-efi=hd0,gpt8 --hint-baremetal=ahci0,gpt8  fedd4b70-a812-422e-a1d4-ecf8094311f5
+		else
+		  search --no-floppy --fs-uuid --set=root fedd4b70-a812-422e-a1d4-ecf8094311f5
+		fi
+		linux /vmlinuz.old root=/dev/sda8
+		initrd /initrd.img.old
+	}
+}
+
+set timeout_style=menu
+if [ "${timeout}" = 0 ]; then
+  set timeout=10
+fi
+### END /etc/grub.d/30_os-prober ###
+
+### BEGIN /etc/grub.d/30_uefi-firmware ###
+menuentry 'System setup' $menuentry_id_option 'uefi-firmware' {
+	fwsetup
+}
+### END /etc/grub.d/30_uefi-firmware ###
+
+### BEGIN /etc/grub.d/40_custom ###
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+### END /etc/grub.d/40_custom ###
+
+### BEGIN /etc/grub.d/41_custom ###
+if [ -f  ${config_directory}/custom.cfg ]; then
+  source ${config_directory}/custom.cfg
+elif [ -z "${config_directory}" -a -f  $prefix/custom.cfg ]; then
+  source $prefix/custom.cfg;
+fi
+### END /etc/grub.d/41_custom ###
+--------------------------------------------------------------------------------
+
+=============================== sda2/etc/fstab: ================================
+
+--------------------------------------------------------------------------------
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sda2 during installation
+UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 /               ext4    errors=remount-ro 0       1
+# /boot/efi was on /dev/sda1 during installation
+UUID=245E-C65E  /boot/efi       vfat    umask=0077      0       1
+/swapfile                                 none            swap    sw              0       0
+--------------------------------------------------------------------------------
+
+=================== sda2: Location of files loaded by Grub: ====================
+
+           GiB - GB             File                                 Fragment(s)
+
+ 148.842525482 = 159.818444800  boot/grub/grub.cfg                             4
+   7.128780365 = 7.654469632    boot/vmlinuz                                   1
+   4.035022736 = 4.332572672    boot/vmlinuz-5.3.0-18-generic                  1
+  89.074092865 = 95.642578944   boot/vmlinuz-5.3.0-24-generic                  1
+   7.128780365 = 7.654469632    boot/vmlinuz-5.3.0-26-generic                  1
+   4.035022736 = 4.332572672    boot/vmlinuz.old                               1
+   8.537818909 = 9.167413248    boot/initrd.img                                4
+   5.715431213 = 6.136897536    boot/initrd.img-5.3.0-18-generic               1
+   8.420509338 = 9.041453056    boot/initrd.img-5.3.0-24-generic               1
+   8.537818909 = 9.167413248    boot/initrd.img-5.3.0-26-generic               4
+   5.715431213 = 6.136897536    boot/initrd.img.old                            1
+
+========================== sda3/boot/grub2/grub.cfg: ===========================
+
+--------------------------------------------------------------------------------
+#
+# DO NOT EDIT THIS FILE
+#
+# It is automatically generated by grub2-mkconfig using templates
+# from /etc/grub.d and settings from /etc/default/grub
+#
+
+### BEGIN /etc/grub.d/00_header ###
+set btrfs_relative_path="y"
+export btrfs_relative_path
+if [ -f ${config_directory}/grubenv ]; then
+  load_env -f ${config_directory}/grubenv
+elif [ -s $prefix/grubenv ]; then
+  load_env
+fi
+
+if [ "${env_block}" ] ; then
+  set env_block="(${root})${env_block}"
+  export env_block
+  load_env -f "${env_block}"
+fi
+
+if [ "${next_entry}" ] ; then
+   set default="${next_entry}"
+   set next_entry=
+   save_env next_entry
+   if [ "${env_block}" ] ; then
+     save_env -f "${env_block}" next_entry
+   fi
+   set boot_once=true
+else
+   set default="${saved_entry}"
+fi
+
+if [ x"${feature_menuentry_id}" = xy ]; then
+  menuentry_id_option="--id"
+else
+  menuentry_id_option=""
+fi
+
+export menuentry_id_option
+
+if [ "${prev_saved_entry}" ]; then
+  set saved_entry="${prev_saved_entry}"
+  save_env saved_entry
+  set prev_saved_entry=
+  save_env prev_saved_entry
+  set boot_once=true
+fi
+
+function savedefault {
+  if [ -z "${boot_once}" ]; then
+    saved_entry="${chosen}"
+    if [ "${env_block}" ] ; then
+      save_env -f "${env_block}" saved_entry
+    else
+      save_env saved_entry
+    fi
+
+  fi
+}
+
+function load_video {
+  if [ x$feature_all_video_module = xy ]; then
+    insmod all_video
+  else
+    insmod efi_gop
+    insmod efi_uga
+    insmod ieee1275_fb
+    insmod vbe
+    insmod vga
+    insmod video_bochs
+    insmod video_cirrus
+  fi
+}
+
+if [ x$feature_default_font_path = xy ] ; then
+   font=unicode
+else
+insmod part_gpt
+insmod btrfs
+set root='hd0,gpt3'
+if [ x$feature_platform_search_hint = xy ]; then
+  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+else
+  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+fi
+    font="/usr/share/grub2/unicode.pf2"
+fi
+
+if loadfont $font ; then
+  set gfxmode=auto
+  load_video
+  insmod gfxterm
+  set locale_dir=$prefix/locale
+  set lang=it_IT
+  insmod gettext
+fi
+terminal_output gfxterm
+insmod part_gpt
+insmod btrfs
+set root='hd0,gpt3'
+if [ x$feature_platform_search_hint = xy ]; then
+  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+else
+  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+fi
+insmod gfxmenu
+loadfont ($root)/boot/grub2/themes/openSUSE/ascii.pf2
+loadfont ($root)/boot/grub2/themes/openSUSE/DejaVuSans10.pf2
+loadfont ($root)/boot/grub2/themes/openSUSE/DejaVuSans12.pf2
+loadfont ($root)/boot/grub2/themes/openSUSE/DejaVuSans-Bold14.pf2
+insmod png
+set theme=($root)/boot/grub2/themes/openSUSE/theme.txt
+export theme
+if [ x${boot_once} = xtrue ]; then
+  set timeout=0
+elif [ x$feature_timeout_style = xy ] ; then
+  set timeout_style=menu
+  set timeout=8
+# Fallback normal timeout code in case the timeout_style feature is
+# unavailable.
+else
+  set timeout=8
+fi
+if [ -n "$extra_cmdline" ]; then
+  menuentry "Help on bootable snapshot #$snapshot_num" {
+    echo "Select the default entry of the snapshot boot menu."
+    echo "Examine the snapshot, and if it's OK,"
+    echo "   run 'snapper rollback' and reboot."
+    echo "See 'System Rollback by Booting from Snapshots'"
+    echo "   in the manual for more information."
+    echo "  ** Hit Any Key to return to boot menu **  "
+    read
+  }
+fi
+### END /etc/grub.d/00_header ###
+
+### BEGIN /etc/grub.d/00_tuned ###
+set tuned_params=""
+set tuned_initrd=""
+### END /etc/grub.d/00_tuned ###
+
+### BEGIN /etc/grub.d/10_linux ###
+menuentry 'openSUSE Leap 15.1'  --class opensuse --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-simple-15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+	load_video
+	set gfxpayload=keep
+	insmod gzio
+	insmod part_gpt
+	insmod btrfs
+	set root='hd0,gpt3'
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+	else
+	  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+	fi
+	echo	'Caricamento Linux 4.12.14-lp151.28.36-default...'
+	linux	/boot/vmlinuz-4.12.14-lp151.28.36-default root=UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  ${extra_cmdline} splash=silent resume=/dev/disk/by-id/ata-ST31000524AS_6VPH6R0E-part4 quiet mitigations=auto
+	echo	'Caricamento ramdisk iniziale...'
+	initrd	/boot/initrd-4.12.14-lp151.28.36-default
+}
+submenu 'Opzioni avanzate per openSUSE Leap 15.1' --hotkey=1 $menuentry_id_option 'gnulinux-advanced-15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+	menuentry 'openSUSE Leap 15.1, con Linux 4.12.14-lp151.28.36-default' --hotkey=2 --class opensuse --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.12.14-lp151.28.36-default-advanced-15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+		load_video
+		set gfxpayload=keep
+		insmod gzio
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt3'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		else
+		  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		fi
+		echo	'Caricamento Linux 4.12.14-lp151.28.36-default...'
+		linux	/boot/vmlinuz-4.12.14-lp151.28.36-default root=UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  ${extra_cmdline} splash=silent resume=/dev/disk/by-id/ata-ST31000524AS_6VPH6R0E-part4 quiet mitigations=auto
+		echo	'Caricamento ramdisk iniziale...'
+		initrd	/boot/initrd-4.12.14-lp151.28.36-default
+	}
+	menuentry 'openSUSE Leap 15.1, con Linux 4.12.14-lp151.28.36-default (modalità ripristino)' --hotkey=3 --class opensuse --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.12.14-lp151.28.36-default-recovery-15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+		load_video
+		set gfxpayload=keep
+		insmod gzio
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt3'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		else
+		  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		fi
+		echo	'Caricamento Linux 4.12.14-lp151.28.36-default...'
+		linux	/boot/vmlinuz-4.12.14-lp151.28.36-default root=UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  ${extra_cmdline} 
+		echo	'Caricamento ramdisk iniziale...'
+		initrd	/boot/initrd-4.12.14-lp151.28.36-default
+	}
+	menuentry 'openSUSE Leap 15.1, con Linux 4.12.14-lp151.27-default'  --class opensuse --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.12.14-lp151.27-default-advanced-15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+		load_video
+		set gfxpayload=keep
+		insmod gzio
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt3'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		else
+		  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		fi
+		echo	'Caricamento Linux 4.12.14-lp151.27-default...'
+		linux	/boot/vmlinuz-4.12.14-lp151.27-default root=UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  ${extra_cmdline} splash=silent resume=/dev/disk/by-id/ata-ST31000524AS_6VPH6R0E-part4 quiet mitigations=auto
+		echo	'Caricamento ramdisk iniziale...'
+		initrd	/boot/initrd-4.12.14-lp151.27-default
+	}
+	menuentry 'openSUSE Leap 15.1, con Linux 4.12.14-lp151.27-default (modalità ripristino)' --hotkey=1 --class opensuse --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.12.14-lp151.27-default-recovery-15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+		load_video
+		set gfxpayload=keep
+		insmod gzio
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt3'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		else
+		  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		fi
+		echo	'Caricamento Linux 4.12.14-lp151.27-default...'
+		linux	/boot/vmlinuz-4.12.14-lp151.27-default root=UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  ${extra_cmdline} 
+		echo	'Caricamento ramdisk iniziale...'
+		initrd	/boot/initrd-4.12.14-lp151.27-default
+	}
+}
+
+### END /etc/grub.d/10_linux ###
+
+### BEGIN /etc/grub.d/20_linux_xen ###
+
+### END /etc/grub.d/20_linux_xen ###
+
+### BEGIN /etc/grub.d/20_memtest86+ ###
+### END /etc/grub.d/20_memtest86+ ###
+
+### BEGIN /etc/grub.d/30_os-prober ###
+menuentry 'Ubuntu 19.10 (19.10) (su /dev/sda2)' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-simple-0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+	insmod part_gpt
+	insmod ext2
+	set root='hd0,gpt2'
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+	else
+	  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+	fi
+	linux /boot/vmlinuz-5.3.0-26-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro quiet splash $vt_handoff
+	initrd /boot/initrd.img-5.3.0-26-generic
+}
+submenu 'Opzioni avanzate per Ubuntu 19.10 (19.10) (su /dev/sda2)' $menuentry_id_option 'osprober-gnulinux-advanced-0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+	menuentry 'Ubuntu (su /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-26-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-26-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro quiet splash $vt_handoff
+		initrd /boot/initrd.img-5.3.0-26-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-26-generic (su /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-26-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-26-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro quiet splash $vt_handoff
+		initrd /boot/initrd.img-5.3.0-26-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-26-generic (recovery mode) (su /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-26-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-26-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro recovery nomodeset
+		initrd /boot/initrd.img-5.3.0-26-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-24-generic (su /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-24-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-24-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro quiet splash $vt_handoff
+		initrd /boot/initrd.img-5.3.0-24-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-24-generic (recovery mode) (su /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-24-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-24-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro recovery nomodeset
+		initrd /boot/initrd.img-5.3.0-24-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-18-generic (su /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-18-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-18-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro quiet splash $vt_handoff
+		initrd /boot/initrd.img-5.3.0-18-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-18-generic (recovery mode) (su /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-18-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-18-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro recovery nomodeset
+		initrd /boot/initrd.img-5.3.0-18-generic
+	}
+}
+
+menuentry 'openSUSE Tumbleweed (su /dev/sda7)' --class opensuse --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-simple-c0e87b3b-43aa-403d-b532-64fcdee4442c' {
+	insmod part_gpt
+	insmod btrfs
+	set root='hd0,gpt7'
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt7 --hint-efi=hd0,gpt7 --hint-baremetal=ahci0,gpt7  c0e87b3b-43aa-403d-b532-64fcdee4442c
+	else
+	  search --no-floppy --fs-uuid --set=root c0e87b3b-43aa-403d-b532-64fcdee4442c
+	fi
+	linux /boot/vmlinuz-5.5.6-1-default root=UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c ${extra_cmdline} splash=silent resume=/dev/disk/by-uuid/2cee98e4-66c7-4684-ae70-56b9c26ce122 mitigations=auto quiet
+	initrd /boot/initrd-5.5.6-1-default
+}
+submenu 'Opzioni avanzate per openSUSE Tumbleweed (su /dev/sda7)' $menuentry_id_option 'osprober-gnulinux-advanced-c0e87b3b-43aa-403d-b532-64fcdee4442c' {
+	menuentry 'openSUSE Tumbleweed (su /dev/sda7)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.5.6-1-default--c0e87b3b-43aa-403d-b532-64fcdee4442c' {
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt7'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt7 --hint-efi=hd0,gpt7 --hint-baremetal=ahci0,gpt7  c0e87b3b-43aa-403d-b532-64fcdee4442c
+		else
+		  search --no-floppy --fs-uuid --set=root c0e87b3b-43aa-403d-b532-64fcdee4442c
+		fi
+		linux /boot/vmlinuz-5.5.6-1-default root=UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c ${extra_cmdline} splash=silent resume=/dev/disk/by-uuid/2cee98e4-66c7-4684-ae70-56b9c26ce122 mitigations=auto quiet
+		initrd /boot/initrd-5.5.6-1-default
+	}
+	menuentry 'openSUSE Tumbleweed, with Linux 5.5.6-1-default (su /dev/sda7)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.5.6-1-default--c0e87b3b-43aa-403d-b532-64fcdee4442c' {
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt7'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt7 --hint-efi=hd0,gpt7 --hint-baremetal=ahci0,gpt7  c0e87b3b-43aa-403d-b532-64fcdee4442c
+		else
+		  search --no-floppy --fs-uuid --set=root c0e87b3b-43aa-403d-b532-64fcdee4442c
+		fi
+		linux /boot/vmlinuz-5.5.6-1-default root=UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c ${extra_cmdline} splash=silent resume=/dev/disk/by-uuid/2cee98e4-66c7-4684-ae70-56b9c26ce122 mitigations=auto quiet
+		initrd /boot/initrd-5.5.6-1-default
+	}
+	menuentry 'openSUSE Tumbleweed, with Linux 5.5.6-1-default (recovery mode) (su /dev/sda7)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.5.6-1-default--c0e87b3b-43aa-403d-b532-64fcdee4442c' {
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt7'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt7 --hint-efi=hd0,gpt7 --hint-baremetal=ahci0,gpt7  c0e87b3b-43aa-403d-b532-64fcdee4442c
+		else
+		  search --no-floppy --fs-uuid --set=root c0e87b3b-43aa-403d-b532-64fcdee4442c
+		fi
+		linux /boot/vmlinuz-5.5.6-1-default root=UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c ${extra_cmdline}
+		initrd /boot/initrd-5.5.6-1-default
+	}
+}
+
+### END /etc/grub.d/30_os-prober ###
+
+### BEGIN /etc/grub.d/40_custom ###
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+### END /etc/grub.d/40_custom ###
+
+### BEGIN /etc/grub.d/41_custom ###
+if [ -f  ${config_directory}/custom.cfg ]; then
+  source ${config_directory}/custom.cfg
+elif [ -z "${config_directory}" -a -f  $prefix/custom.cfg ]; then
+  source $prefix/custom.cfg;
+fi
+### END /etc/grub.d/41_custom ###
+
+### BEGIN /etc/grub.d/80_suse_btrfs_snapshot ###
+btrfs-mount-subvol ($root) /.snapshots @/.snapshots
+if [ -f "/.snapshots/grub-snapshot.cfg" ]; then
+  source "/.snapshots/grub-snapshot.cfg"
+fi
+### END /etc/grub.d/80_suse_btrfs_snapshot ###
+
+### BEGIN /etc/grub.d/90_persistent ###
+### END /etc/grub.d/90_persistent ###
+
+### BEGIN /etc/grub.d/95_textmode ###
+### END /etc/grub.d/95_textmode ###
+--------------------------------------------------------------------------------
+
+=============================== sda3/etc/fstab: ================================
+
+--------------------------------------------------------------------------------
+UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  /                       btrfs  defaults                      0  0
+UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  /var                    btrfs  subvol=/@/var                 0  0
+UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  /usr/local              btrfs  subvol=/@/usr/local           0  0
+UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  /tmp                    btrfs  subvol=/@/tmp                 0  0
+UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  /srv                    btrfs  subvol=/@/srv                 0  0
+UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  /root                   btrfs  subvol=/@/root                0  0
+UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  /opt                    btrfs  subvol=/@/opt                 0  0
+UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  /home                   btrfs  subvol=/@/home                0  0
+UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  /boot/grub2/x86_64-efi  btrfs  subvol=/@/boot/grub2/x86_64-efi  0  0
+UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  /boot/grub2/i386-pc     btrfs  subvol=/@/boot/grub2/i386-pc  0  0
+UUID=245E-C65E                             /boot/efi               vfat   defaults                      0  0
+UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab  /.snapshots             btrfs  subvol=/@/.snapshots          0  0
+UUID=2cee98e4-66c7-4684-ae70-56b9c26ce122  swap                    swap   defaults                      0  0
+
+
+--------------------------------------------------------------------------------
+
+=================== sda3: Location of files loaded by Grub: ====================
+
+           GiB - GB             File                                 Fragment(s)
+
+ 192.667118073 = 206.874742784  boot/grub2/grub.cfg                            1
+ 198.926651001 = 213.595865088  boot/vmlinuz                                   1
+ 195.070854187 = 209.455734784  boot/vmlinuz-4.12.14-lp151.27-default          1
+ 198.926651001 = 213.595865088  boot/vmlinuz-4.12.14-lp151.28.36-default       1
+ 374.420574188 = 402.031030272  boot/initrd                                    1
+ 366.213813782 = 393.219088384  boot/initrd-4.12.14-lp151.27-default           1
+ 374.420574188 = 402.031030272  boot/initrd-4.12.14-lp151.28.36-default        1
+
+========================== sda7/boot/grub2/grub.cfg: ===========================
+
+--------------------------------------------------------------------------------
+#
+# DO NOT EDIT THIS FILE
+#
+# It is automatically generated by grub2-mkconfig using templates
+# from /etc/grub.d and settings from /etc/default/grub
+#
+
+### BEGIN /etc/grub.d/00_header ###
+set btrfs_relative_path="y"
+export btrfs_relative_path
+if [ -f ${config_directory}/grubenv ]; then
+  load_env -f ${config_directory}/grubenv
+elif [ -s $prefix/grubenv ]; then
+  load_env
+fi
+
+if [ "${env_block}" ] ; then
+  set env_block="(${root})${env_block}"
+  export env_block
+  load_env -f "${env_block}"
+fi
+
+if [ "${next_entry}" ] ; then
+   set default="${next_entry}"
+   set next_entry=
+   save_env next_entry
+   if [ "${env_block}" ] ; then
+     save_env -f "${env_block}" next_entry
+   fi
+   set boot_once=true
+else
+   set default="${saved_entry}"
+fi
+
+if [ x"${feature_menuentry_id}" = xy ]; then
+  menuentry_id_option="--id"
+else
+  menuentry_id_option=""
+fi
+
+export menuentry_id_option
+
+if [ "${prev_saved_entry}" ]; then
+  set saved_entry="${prev_saved_entry}"
+  save_env saved_entry
+  set prev_saved_entry=
+  save_env prev_saved_entry
+  set boot_once=true
+fi
+
+function savedefault {
+  if [ -z "${boot_once}" ]; then
+    saved_entry="${chosen}"
+    if [ "${env_block}" ] ; then
+      save_env -f "${env_block}" saved_entry
+    else
+      save_env saved_entry
+    fi
+
+  fi
+}
+
+function load_video {
+  if [ x$feature_all_video_module = xy ]; then
+    insmod all_video
+  else
+    insmod efi_gop
+    insmod efi_uga
+    insmod ieee1275_fb
+    insmod vbe
+    insmod vga
+    insmod video_bochs
+    insmod video_cirrus
+  fi
+}
+
+if [ x$feature_default_font_path = xy ] ; then
+   font=unicode
+else
+insmod part_gpt
+insmod btrfs
+set root='hd0,gpt7'
+if [ x$feature_platform_search_hint = xy ]; then
+  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt7 --hint-efi=hd0,gpt7 --hint-baremetal=ahci0,gpt7 --hint='hd0,gpt7'  c0e87b3b-43aa-403d-b532-64fcdee4442c
+else
+  search --no-floppy --fs-uuid --set=root c0e87b3b-43aa-403d-b532-64fcdee4442c
+fi
+    font="/usr/share/grub2/unicode.pf2"
+fi
+
+if loadfont $font ; then
+  set gfxmode=auto
+  load_video
+  insmod gfxterm
+fi
+terminal_output gfxterm
+insmod part_gpt
+insmod btrfs
+set root='hd0,gpt7'
+if [ x$feature_platform_search_hint = xy ]; then
+  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt7 --hint-efi=hd0,gpt7 --hint-baremetal=ahci0,gpt7 --hint='hd0,gpt7'  c0e87b3b-43aa-403d-b532-64fcdee4442c
+else
+  search --no-floppy --fs-uuid --set=root c0e87b3b-43aa-403d-b532-64fcdee4442c
+fi
+insmod gfxmenu
+loadfont ($root)/boot/grub2/themes/openSUSE/DejaVuSans-Bold14.pf2
+loadfont ($root)/boot/grub2/themes/openSUSE/DejaVuSans10.pf2
+loadfont ($root)/boot/grub2/themes/openSUSE/DejaVuSans12.pf2
+loadfont ($root)/boot/grub2/themes/openSUSE/ascii.pf2
+insmod png
+set theme=($root)/boot/grub2/themes/openSUSE/theme.txt
+export theme
+if [ x${boot_once} = xtrue ]; then
+  set timeout=0
+elif [ x$feature_timeout_style = xy ] ; then
+  set timeout_style=menu
+  set timeout=8
+# Fallback normal timeout code in case the timeout_style feature is
+# unavailable.
+else
+  set timeout=8
+fi
+if [ -n "$extra_cmdline" ]; then
+  menuentry "Help on bootable snapshot #$snapshot_num" {
+    echo "Select the default entry of the snapshot boot menu."
+    echo "Examine the snapshot, and if it's OK,"
+    echo "   run 'snapper rollback' and reboot."
+    echo "See 'System Rollback by Booting from Snapshots'"
+    echo "   in the manual for more information."
+    echo "  ** Hit Any Key to return to boot menu **  "
+    read
+  }
+fi
+### END /etc/grub.d/00_header ###
+
+### BEGIN /etc/grub.d/00_tuned ###
+set tuned_params=""
+set tuned_initrd=""
+### END /etc/grub.d/00_tuned ###
+
+### BEGIN /etc/grub.d/10_linux ###
+menuentry 'openSUSE Tumbleweed'  --class opensuse --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-simple-c0e87b3b-43aa-403d-b532-64fcdee4442c' {
+	load_video
+	set gfxpayload=keep
+	insmod gzio
+	insmod part_gpt
+	insmod btrfs
+	set root='hd0,gpt7'
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt7 --hint-efi=hd0,gpt7 --hint-baremetal=ahci0,gpt7 --hint='hd0,gpt7'  c0e87b3b-43aa-403d-b532-64fcdee4442c
+	else
+	  search --no-floppy --fs-uuid --set=root c0e87b3b-43aa-403d-b532-64fcdee4442c
+	fi
+	echo	'Loading Linux 5.5.6-1-default ...'
+	linux	/boot/vmlinuz-5.5.6-1-default root=UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  ${extra_cmdline} splash=silent resume=/dev/disk/by-uuid/2cee98e4-66c7-4684-ae70-56b9c26ce122 mitigations=auto quiet
+	echo	'Loading initial ramdisk ...'
+	initrd	/boot/initrd-5.5.6-1-default
+}
+submenu 'Advanced options for openSUSE Tumbleweed' --hotkey=1 $menuentry_id_option 'gnulinux-advanced-c0e87b3b-43aa-403d-b532-64fcdee4442c' {
+	menuentry 'openSUSE Tumbleweed, with Linux 5.5.6-1-default' --hotkey=2 --class opensuse --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-5.5.6-1-default-advanced-c0e87b3b-43aa-403d-b532-64fcdee4442c' {
+		load_video
+		set gfxpayload=keep
+		insmod gzio
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt7'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt7 --hint-efi=hd0,gpt7 --hint-baremetal=ahci0,gpt7 --hint='hd0,gpt7'  c0e87b3b-43aa-403d-b532-64fcdee4442c
+		else
+		  search --no-floppy --fs-uuid --set=root c0e87b3b-43aa-403d-b532-64fcdee4442c
+		fi
+		echo	'Loading Linux 5.5.6-1-default ...'
+		linux	/boot/vmlinuz-5.5.6-1-default root=UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  ${extra_cmdline} splash=silent resume=/dev/disk/by-uuid/2cee98e4-66c7-4684-ae70-56b9c26ce122 mitigations=auto quiet
+		echo	'Loading initial ramdisk ...'
+		initrd	/boot/initrd-5.5.6-1-default
+	}
+	menuentry 'openSUSE Tumbleweed, with Linux 5.5.6-1-default (recovery mode)' --hotkey=3 --class opensuse --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-5.5.6-1-default-recovery-c0e87b3b-43aa-403d-b532-64fcdee4442c' {
+		load_video
+		set gfxpayload=keep
+		insmod gzio
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt7'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt7 --hint-efi=hd0,gpt7 --hint-baremetal=ahci0,gpt7 --hint='hd0,gpt7'  c0e87b3b-43aa-403d-b532-64fcdee4442c
+		else
+		  search --no-floppy --fs-uuid --set=root c0e87b3b-43aa-403d-b532-64fcdee4442c
+		fi
+		echo	'Loading Linux 5.5.6-1-default ...'
+		linux	/boot/vmlinuz-5.5.6-1-default root=UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  ${extra_cmdline} 
+		echo	'Loading initial ramdisk ...'
+		initrd	/boot/initrd-5.5.6-1-default
+	}
+}
+
+### END /etc/grub.d/10_linux ###
+
+### BEGIN /etc/grub.d/20_linux_xen ###
+
+### END /etc/grub.d/20_linux_xen ###
+
+### BEGIN /etc/grub.d/20_memtest86+ ###
+### END /etc/grub.d/20_memtest86+ ###
+
+### BEGIN /etc/grub.d/30_os-prober ###
+menuentry 'Ubuntu 19.10 (19.10) (on /dev/sda2)' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-simple-0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+	insmod part_gpt
+	insmod ext2
+	set root='hd0,gpt2'
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2 --hint='hd0,gpt2'  0643c84d-8a1d-41ca-a6c4-25167d48b554
+	else
+	  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+	fi
+	linux /boot/vmlinuz-5.3.0-26-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro quiet splash $vt_handoff
+	initrd /boot/initrd.img-5.3.0-26-generic
+}
+submenu 'Advanced options for Ubuntu 19.10 (19.10) (on /dev/sda2)' $menuentry_id_option 'osprober-gnulinux-advanced-0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+	menuentry 'Ubuntu (on /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-26-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2 --hint='hd0,gpt2'  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-26-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro quiet splash $vt_handoff
+		initrd /boot/initrd.img-5.3.0-26-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-26-generic (on /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-26-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2 --hint='hd0,gpt2'  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-26-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro quiet splash $vt_handoff
+		initrd /boot/initrd.img-5.3.0-26-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-26-generic (recovery mode) (on /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-26-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2 --hint='hd0,gpt2'  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-26-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro recovery nomodeset
+		initrd /boot/initrd.img-5.3.0-26-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-24-generic (on /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-24-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2 --hint='hd0,gpt2'  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-24-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro quiet splash $vt_handoff
+		initrd /boot/initrd.img-5.3.0-24-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-24-generic (recovery mode) (on /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-24-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2 --hint='hd0,gpt2'  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-24-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro recovery nomodeset
+		initrd /boot/initrd.img-5.3.0-24-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-18-generic (on /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-18-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2 --hint='hd0,gpt2'  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-18-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro quiet splash $vt_handoff
+		initrd /boot/initrd.img-5.3.0-18-generic
+	}
+	menuentry 'Ubuntu, with Linux 5.3.0-18-generic (recovery mode) (on /dev/sda2)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-5.3.0-18-generic--0643c84d-8a1d-41ca-a6c4-25167d48b554' {
+		insmod part_gpt
+		insmod ext2
+		set root='hd0,gpt2'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2 --hint='hd0,gpt2'  0643c84d-8a1d-41ca-a6c4-25167d48b554
+		else
+		  search --no-floppy --fs-uuid --set=root 0643c84d-8a1d-41ca-a6c4-25167d48b554
+		fi
+		linux /boot/vmlinuz-5.3.0-18-generic root=UUID=0643c84d-8a1d-41ca-a6c4-25167d48b554 ro recovery nomodeset
+		initrd /boot/initrd.img-5.3.0-18-generic
+	}
+}
+
+menuentry 'openSUSE Leap 15.1 (on /dev/sda3)' --class opensuse --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-simple-15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+	insmod part_gpt
+	insmod btrfs
+	set root='hd0,gpt3'
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3 --hint='hd0,gpt3'  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+	else
+	  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+	fi
+	linux /boot/vmlinuz-4.12.14-lp151.28.36-default root=UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab ${extra_cmdline} splash=silent resume=/dev/disk/by-id/ata-ST31000524AS_6VPH6R0E-part4 quiet mitigations=auto
+	initrd /boot/initrd-4.12.14-lp151.28.36-default
+}
+submenu 'Advanced options for openSUSE Leap 15.1 (on /dev/sda3)' $menuentry_id_option 'osprober-gnulinux-advanced-15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+	menuentry 'openSUSE Leap 15.1 (on /dev/sda3)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-4.12.14-lp151.28.36-default--15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt3'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3 --hint='hd0,gpt3'  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		else
+		  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		fi
+		linux /boot/vmlinuz-4.12.14-lp151.28.36-default root=UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab ${extra_cmdline} splash=silent resume=/dev/disk/by-id/ata-ST31000524AS_6VPH6R0E-part4 quiet mitigations=auto
+		initrd /boot/initrd-4.12.14-lp151.28.36-default
+	}
+	menuentry 'openSUSE Leap 15.1, with Linux 4.12.14-lp151.28.36-default (on /dev/sda3)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-4.12.14-lp151.28.36-default--15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt3'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3 --hint='hd0,gpt3'  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		else
+		  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		fi
+		linux /boot/vmlinuz-4.12.14-lp151.28.36-default root=UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab ${extra_cmdline} splash=silent resume=/dev/disk/by-id/ata-ST31000524AS_6VPH6R0E-part4 quiet mitigations=auto
+		initrd /boot/initrd-4.12.14-lp151.28.36-default
+	}
+	menuentry 'openSUSE Leap 15.1, with Linux 4.12.14-lp151.28.36-default (recovery mode) (on /dev/sda3)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-4.12.14-lp151.28.36-default--15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt3'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3 --hint='hd0,gpt3'  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		else
+		  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		fi
+		linux /boot/vmlinuz-4.12.14-lp151.28.36-default root=UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab ${extra_cmdline}
+		initrd /boot/initrd-4.12.14-lp151.28.36-default
+	}
+	menuentry 'openSUSE Leap 15.1, with Linux 4.12.14-lp151.27-default (on /dev/sda3)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-4.12.14-lp151.27-default--15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt3'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3 --hint='hd0,gpt3'  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		else
+		  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		fi
+		linux /boot/vmlinuz-4.12.14-lp151.27-default root=UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab ${extra_cmdline} splash=silent resume=/dev/disk/by-id/ata-ST31000524AS_6VPH6R0E-part4 quiet mitigations=auto
+		initrd /boot/initrd-4.12.14-lp151.27-default
+	}
+	menuentry 'openSUSE Leap 15.1, with Linux 4.12.14-lp151.27-default (recovery mode) (on /dev/sda3)' --class gnu-linux --class gnu --class os $menuentry_id_option 'osprober-gnulinux-/boot/vmlinuz-4.12.14-lp151.27-default--15eaebf1-67c9-4a5e-9ddf-219c999c28ab' {
+		insmod part_gpt
+		insmod btrfs
+		set root='hd0,gpt3'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt3 --hint-efi=hd0,gpt3 --hint-baremetal=ahci0,gpt3 --hint='hd0,gpt3'  15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		else
+		  search --no-floppy --fs-uuid --set=root 15eaebf1-67c9-4a5e-9ddf-219c999c28ab
+		fi
+		linux /boot/vmlinuz-4.12.14-lp151.27-default root=UUID=15eaebf1-67c9-4a5e-9ddf-219c999c28ab ${extra_cmdline}
+		initrd /boot/initrd-4.12.14-lp151.27-default
+	}
+}
+
+### END /etc/grub.d/30_os-prober ###
+
+### BEGIN /etc/grub.d/40_custom ###
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+### END /etc/grub.d/40_custom ###
+
+### BEGIN /etc/grub.d/41_custom ###
+if [ -f  ${config_directory}/custom.cfg ]; then
+  source ${config_directory}/custom.cfg
+elif [ -z "${config_directory}" -a -f  $prefix/custom.cfg ]; then
+  source $prefix/custom.cfg;
+fi
+### END /etc/grub.d/41_custom ###
+
+### BEGIN /etc/grub.d/80_suse_btrfs_snapshot ###
+btrfs-mount-subvol ($root) /.snapshots @/.snapshots
+if [ -f "/.snapshots/grub-snapshot.cfg" ]; then
+  source "/.snapshots/grub-snapshot.cfg"
+fi
+### END /etc/grub.d/80_suse_btrfs_snapshot ###
+
+### BEGIN /etc/grub.d/90_persistent ###
+### END /etc/grub.d/90_persistent ###
+
+### BEGIN /etc/grub.d/95_textmode ###
+### END /etc/grub.d/95_textmode ###
+--------------------------------------------------------------------------------
+
+=============================== sda7/etc/fstab: ================================
+
+--------------------------------------------------------------------------------
+UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  /                       btrfs  defaults                      0  0
+UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  /var                    btrfs  subvol=/@/var                 0  0
+UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  /usr/local              btrfs  subvol=/@/usr/local           0  0
+UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  /tmp                    btrfs  subvol=/@/tmp                 0  0
+UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  /srv                    btrfs  subvol=/@/srv                 0  0
+UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  /root                   btrfs  subvol=/@/root                0  0
+UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  /opt                    btrfs  subvol=/@/opt                 0  0
+UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  /home                   btrfs  subvol=/@/home                0  0
+UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  /boot/grub2/x86_64-efi  btrfs  subvol=/@/boot/grub2/x86_64-efi  0  0
+UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  /boot/grub2/i386-pc     btrfs  subvol=/@/boot/grub2/i386-pc  0  0
+UUID=c0e87b3b-43aa-403d-b532-64fcdee4442c  /.snapshots             btrfs  subvol=/@/.snapshots          0  0
+--------------------------------------------------------------------------------
+
+=================== sda7: Location of files loaded by Grub: ====================
+
+           GiB - GB             File                                 Fragment(s)
+
+ 591.264720917 = 634.865659904  boot/grub2/grub.cfg                            1
+ 595.244861603 = 639.139303424  boot/vmlinuz                                   1
+ 595.244861603 = 639.139303424  boot/vmlinuz-5.5.6-1-default                   1
+ 597.053020477 = 641.080799232  boot/initrd                                    1
+ 597.053020477 = 641.080799232  boot/initrd-5.5.6-1-default                    1
+
+=============================== StdErr Messages: ===============================
+
+mdadm: No arrays found in config file or automatically
+
