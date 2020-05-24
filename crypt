@@ -1,0 +1,88 @@
+#include <gtk/gtk.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<unistd.h>
+#include<sys/types.h>
+#include<sys/stat.h>
+#include<fcntl.h>
+#define N 10
+static void criptazione(GtkWidget* button_cript, gpointer user_data){
+
+  int fdin, fdout;
+  char* bufin;
+  char bufout[1];
+  int temp, lett;
+
+
+  if((fdin=open("input.txt", O_RDONLY))==-1){
+    perror("Errore apertura file fdin");
+    exit(EXIT_FAILURE);
+  }
+  if((fdout=open("criptedout.txt", O_CREAT|O_WRONLY, 0666))==-1){
+    perror("Errore apertura fdout");
+    exit(EXIT_FAILURE);
+  }
+
+
+  while((lett=read(fdin, bufin, 1))>0){
+    g_print("Hello World\n");
+    temp=(int)*bufin;
+    temp+=N;
+    bufout[0]=temp;
+    if((write(fdout, bufout, 1))==-1){
+      perror("Errore in scrittura");
+      exit(EXIT_FAILURE);
+    }
+  }
+
+  if(lett==-1){
+    perror("Errore in lettura");
+    exit(EXIT_FAILURE);}
+
+  if(close(fdin)==-1){
+    perror("Errore chiusura fdin");
+    exit(EXIT_FAILURE);
+  }
+
+}
+
+static void
+activate (GtkApplication* app, gpointer user_data)
+{
+  GtkWidget *window;
+  GtkWidget* button_cript;
+  GtkWidget* button_decript;
+  GtkWidget* button_box;
+
+  window = gtk_application_window_new (app);
+  gtk_window_set_title (GTK_WINDOW (window), "Window");
+  gtk_window_set_default_size (GTK_WINDOW (window), 200, 200);
+  gtk_widget_show_all (window);
+
+  button_box = gtk_button_box_new (GTK_ORIENTATION_HORIZONTAL);
+  gtk_container_add (GTK_CONTAINER (window), button_box);
+
+  button_cript = gtk_button_new_with_label("Cripta il messaggio");
+  gtk_container_add (GTK_CONTAINER (button_box), button_cript);
+  g_signal_connect (button_cript, "clicked", G_CALLBACK (criptazione), NULL);
+
+  button_decript = gtk_button_new_with_label ("Decripta il messaggio");
+  gtk_container_add (GTK_CONTAINER (button_box), button_decript);
+
+
+  gtk_widget_show_all (window);
+}
+
+int main (int argc, char **argv)
+{
+  GtkApplication *app;
+  int status;
+
+  app = gtk_application_new ("org.gtk.example", G_APPLICATION_FLAGS_NONE);
+  g_signal_connect (app, "activate", G_CALLBACK (activate), NULL);
+  status = g_application_run (G_APPLICATION (app), argc, argv);
+  g_object_unref (app);
+
+  return status;
+}
